@@ -22,3 +22,11 @@ console.log(typeof myVar);
 
 const myHeading = document.querySelector("h1");
 console.log(typeof myHeading)
+
+const myPet = "cat";
+const myPetName = "Money";
+const myPetAge = 2
+
+console.log("I have a " + myPet + " her name is" + myPetName + " and she is" + myPetAge + " years old");
+const outputString = `I have a  ${myPet} her name is ${myPetName} and she is  ${myPetAge} years old.`;
+myHeading.textContent = outputString;
