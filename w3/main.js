@@ -1,32 +1,27 @@
-const myName = "Mary Vang";
-const myAge = 143;
+function determineHouseHoldPts(numberInHousehold) {
+    console.log("Inside the function");
+    if (numberInHousehold === 1) {
+        carbonFootprintPoints = carbonFootprintPoints + 14;
+    } else if(numberInHousehold === 2) {
+        carbonFootprintPoints = carbonFootprintPoints + 12;
+    } else if(numberInHousehold === 3) {
+        carbonFootprintPoints = carbonFootprintPoints + 10;
+    } else if(numberInHousehold === 4) {
+        carbonFootprintPoints = carbonFootprintPoints + 8;
+    } else if(numberInHousehold === 5) {
+        carbonFootprintPoints = carbonFootprintPoints + 6;
+    } else if(numberInHousehold === 6) {
+        carbonFootprintPoints = carbonFootprintPoints + 4;
+    } else if(numberInHousehold > 6) {
+        cardonFootprintPoints = carbonFootprintPoints + 2;
+    }
+    console.log(`Based on the number of member of the house hold of ${numberInHousehold} the points would be ${cardonFootprintPoints}.`);
+}
 
-const jsIsWeird = myName + myAge
+let carbonFootprintPoints = 0;
+//const numberInHousehold = 3; 
 
-console.log(jsIsWeird)
-console.log(typeof jsIsWeird)
-console.log(typeof myAge)
+//global scope
 
-
-//what is order of precedence
-//write an example
-
-//const results =
-//console.log(results)
-
-const amIhungry = true;
-console.log(typeof amIhungry);
-
-let myVar;
-console.log(typeof myVar);
-
-const myHeading = document.querySelector("h1");
-console.log(typeof myHeading)
-
-const myPet = "cat";
-const myPetName = "Money";
-const myPetAge = 2
-
-console.log("I have a " + myPet + " her name is" + myPetName + " and she is" + myPetAge + " years old");
-const outputString = `I have a  ${myPet} her name is ${myPetName} and she is  ${myPetAge} years old.`;
-myHeading.textContent = outputString;
+determineHouseHoldPts(3)
+determineHouseHoldPts(4)
